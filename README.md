@@ -30,4 +30,4 @@ npx playwright show-report                # HTML report
 
 Coverage: content/text, links & mailto, CSS theme, hover, anchor navigation, keyboard order, responsive layout (no horizontal scroll), aur accessibility basics (landmarks, heading order, link names, WCAG AA contrast).
 
-Screenshots + run logs `evidence/` folder me hain.
+Screenshots + run logs local `evidence/` folder me hain (gitignored — repo me push nahi hote).
