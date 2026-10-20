@@ -1,5 +1,7 @@
 # website-for-practice
 
+[![Playwright Tests](https://github.com/axayranwa7502-lab/website-for-practice/actions/workflows/playwright.yml/badge.svg)](https://github.com/axayranwa7502-lab/website-for-practice/actions/workflows/playwright.yml)
+
 Meri pehli practice website, GitHub Pages par hosted.
 
 ## Live
