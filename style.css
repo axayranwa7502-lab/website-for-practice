@@ -1,0 +1,122 @@
+:root {
+  --bg: #0f172a;
+  --card: #1e293b;
+  --text: #e2e8f0;
+  --muted: #94a3b8;
+  --accent: #38bdf8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #334155;
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.nav nav a {
+  margin-left: 1.25rem;
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.nav nav a:hover {
+  color: var(--text);
+}
+
+.hero {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 6rem 1.5rem 4rem;
+  text-align: center;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  margin-bottom: 1.25rem;
+  font-size: 0.8rem;
+  color: var(--accent);
+  background: rgba(56, 189, 248, 0.1);
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  border-radius: 999px;
+}
+
+h1 {
+  font-size: clamp(2.25rem, 6vw, 3.5rem);
+  line-height: 1.15;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  color: var(--muted);
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  color: #0f172a;
+  background: var(--accent);
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.section {
+  max-width: 720px;
+  margin: 0 auto 2rem;
+  padding: 1.5rem;
+  background: var(--card);
+  border: 1px solid #334155;
+  border-radius: 0.75rem;
+}
+
+.section h2 {
+  margin-bottom: 0.5rem;
+}
+
+.section a {
+  color: var(--accent);
+}
+
+code {
+  padding: 0.1rem 0.35rem;
+  background: #0f172a;
+  border-radius: 0.25rem;
+}
+
+footer {
+  padding: 2rem;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.875rem;
+  border-top: 1px solid #334155;
+}
