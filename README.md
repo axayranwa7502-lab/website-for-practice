@@ -4,6 +4,11 @@
 
 Meri pehli practice website, GitHub Pages par hosted.
 
+## Docs
+
+- [REQUIREMENTS.md](REQUIREMENTS.md) — kya kya chahiye (features, non-functional, backlog)
+- [CONTRIBUTING.md](CONTRIBUTING.md) — contribution steps
+
 ## Live
 
 https://axayranwa7502-lab.github.io/website-for-practice/
