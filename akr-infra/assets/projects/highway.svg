@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img">
+  <title>Four-lane highway curving toward the horizon at dusk</title>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#08121d"/>
+      <stop offset=".62" stop-color="#17344d"/>
+      <stop offset="1" stop-color="#2d5068"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#243343"/>
+      <stop offset="1" stop-color="#0c141c"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#ffd166" stop-opacity=".95"/>
+      <stop offset=".42" stop-color="#f08a3c" stop-opacity=".4"/>
+      <stop offset="1" stop-color="#f08a3c" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0v40" fill="none" stroke="#8fc7ef" stroke-opacity=".07"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <rect width="800" height="600" fill="url(#grid)"/>
+  <circle cx="596" cy="182" r="168" fill="url(#glow)"/>
+  <circle cx="596" cy="182" r="42" fill="#ffd166"/>
+  <path d="M0 302 118 246 208 292 312 228 430 302Z" fill="#132435"/>
+  <path d="M392 302 512 240 622 302Z" fill="#0f1d2b"/>
+  <rect y="300" width="800" height="300" fill="#0b141c"/>
+  <path d="M332 300H468L800 600H0Z" fill="url(#road)"/>
+  <path d="M332 300 0 600M468 300 800 600" stroke="#c9d7e4" stroke-opacity=".5" stroke-width="4"/>
+  <g fill="#ffd166" fill-opacity=".92">
+    <polygon points="398.6,312 401.4,312 402.3,338 397.7,338"/>
+    <polygon points="397.4,362 402.6,362 403.9,402 396.1,402"/>
+    <polygon points="395.2,432 404.8,432 406.4,486 393.6,486"/>
+    <polygon points="392.6,528 407.4,528 409.4,600 390.6,600"/>
+  </g>
+  <g stroke="#6b8195" stroke-width="3" stroke-linecap="round">
+    <path d="M282 340v8M232 382v10M183 425v12M133 468v15M83 511v18M33 554v22"/>
+    <path d="M518 340v8M568 382v10M617 425v12M667 468v15M717 511v18M767 554v22"/>
+  </g>
+</svg>

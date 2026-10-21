@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img">
+  <title>Rows of solar panels under a bright sun</title>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1726"/>
+      <stop offset="1" stop-color="#2f4f6a"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1a2b3a"/>
+      <stop offset="1" stop-color="#0c161f"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#ffd166" stop-opacity=".95"/>
+      <stop offset=".45" stop-color="#f08a3c" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#f08a3c" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0v40" fill="none" stroke="#8fc7ef" stroke-opacity=".07"/>
+    </pattern>
+    <g id="panel">
+      <rect width="160" height="92" fill="#1c3c5e" stroke="#6ea6c9" stroke-width="2"/>
+      <g stroke="#6ea6c9" stroke-opacity=".45">
+        <path d="M40 0v92M80 0v92M120 0v92M0 31h160M0 62h160"/>
+      </g>
+      <path d="M0 92h160" stroke="#ffd166" stroke-opacity=".45" stroke-width="3"/>
+      <path d="M0 0h160v10H0Z" fill="#a9d8ee" fill-opacity=".25"/>
+    </g>
+  </defs>
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <rect width="800" height="600" fill="url(#grid)"/>
+  <circle cx="646" cy="126" r="170" fill="url(#glow)"/>
+  <circle cx="646" cy="126" r="42" fill="#ffd166"/>
+  <path d="M0 332 120 300 260 330 400 302 540 330 680 304 800 324V346H0Z" fill="#122233"/>
+  <rect y="336" width="800" height="264" fill="url(#ground)"/>
+  <path d="M0 336h800" stroke="#8fc7ef" stroke-opacity=".14" stroke-width="2"/>
+
+  <!-- far row -->
+  <g>
+    <ellipse cx="80" cy="368" rx="52" ry="6" fill="#8fc7ef" opacity=".07"/>
+    <ellipse cx="200" cy="368" rx="52" ry="6" fill="#8fc7ef" opacity=".07"/>
+    <ellipse cx="320" cy="368" rx="52" ry="6" fill="#8fc7ef" opacity=".07"/>
+    <ellipse cx="440" cy="368" rx="52" ry="6" fill="#8fc7ef" opacity=".07"/>
+    <ellipse cx="560" cy="368" rx="52" ry="6" fill="#8fc7ef" opacity=".07"/>
+    <ellipse cx="680" cy="368" rx="52" ry="6" fill="#8fc7ef" opacity=".07"/>
+    <use href="#panel" transform="translate(20 314) scale(.52)"/>
+    <use href="#panel" transform="translate(140 314) scale(.52)"/>
+    <use href="#panel" transform="translate(260 314) scale(.52)"/>
+    <use href="#panel" transform="translate(380 314) scale(.52)"/>
+    <use href="#panel" transform="translate(500 314) scale(.52)"/>
+    <use href="#panel" transform="translate(620 314) scale(.52)"/>
+    <path d="M20 366h680" stroke="#4d7594" stroke-opacity=".55" stroke-width="3"/>
+    <path d="M80 366v14M200 366v14M320 366v14M440 366v14M560 366v14M680 366v14" stroke="#4d7594" stroke-opacity=".55" stroke-width="4"/>
+  </g>
+
+  <!-- middle row -->
+  <g>
+    <ellipse cx="70" cy="456" rx="76" ry="8" fill="#8fc7ef" opacity=".07"/>
+    <ellipse cx="240" cy="456" rx="76" ry="8" fill="#8fc7ef" opacity=".07"/>
+    <ellipse cx="410" cy="456" rx="76" ry="8" fill="#8fc7ef" opacity=".07"/>
+    <ellipse cx="580" cy="456" rx="76" ry="8" fill="#8fc7ef" opacity=".07"/>
+    <ellipse cx="750" cy="456" rx="76" ry="8" fill="#8fc7ef" opacity=".07"/>
+    <use href="#panel" transform="translate(0 382) scale(.74)"/>
+    <use href="#panel" transform="translate(170 382) scale(.74)"/>
+    <use href="#panel" transform="translate(340 382) scale(.74)"/>
+    <use href="#panel" transform="translate(510 382) scale(.74)"/>
+    <use href="#panel" transform="translate(680 382) scale(.74)"/>
+    <path d="M0 452h800" stroke="#5f93b8" stroke-opacity=".5" stroke-width="3"/>
+    <path d="M70 452v20M240 452v20M410 452v20M580 452v20M750 452v20" stroke="#5f93b8" stroke-opacity=".5" stroke-width="5"/>
+  </g>
+
+  <!-- front row -->
+  <g>
+    <ellipse cx="60" cy="572" rx="110" ry="10" fill="#8fc7ef" opacity=".07"/>
+    <ellipse cx="320" cy="572" rx="110" ry="10" fill="#8fc7ef" opacity=".07"/>
+    <ellipse cx="580" cy="572" rx="110" ry="10" fill="#8fc7ef" opacity=".07"/>
+    <use href="#panel" transform="translate(-25 470) scale(1.06)"/>
+    <use href="#panel" transform="translate(235 470) scale(1.06)"/>
+    <use href="#panel" transform="translate(495 470) scale(1.06)"/>
+    <path d="M0 566h720" stroke="#6ea6c9" stroke-opacity=".45" stroke-width="4"/>
+    <path d="M60 566v28M320 566v28M580 566v28" stroke="#6ea6c9" stroke-opacity=".45" stroke-width="6"/>
+  </g>
+</svg>

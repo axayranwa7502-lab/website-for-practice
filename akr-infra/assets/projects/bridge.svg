@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img">
+  <title>Cable-stayed bridge spanning calm water at dusk</title>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1522"/>
+      <stop offset="1" stop-color="#2a4760"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#16344a"/>
+      <stop offset="1" stop-color="#08131c"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#ffd166" stop-opacity=".9"/>
+      <stop offset=".5" stop-color="#f08a3c" stop-opacity=".32"/>
+      <stop offset="1" stop-color="#f08a3c" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0v40" fill="none" stroke="#8fc7ef" stroke-opacity=".07"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <rect width="800" height="600" fill="url(#grid)"/>
+  <circle cx="648" cy="150" r="150" fill="url(#glow)"/>
+  <circle cx="648" cy="150" r="34" fill="#ffd166"/>
+  <path d="M0 372 120 346 240 366 360 338 470 362 560 346 680 366 800 342V382H0Z" fill="#122536"/>
+  <rect y="378" width="800" height="222" fill="url(#water)"/>
+  <g stroke="#8fc7ef" stroke-opacity=".12">
+    <path d="M0 412h800M0 446h800M0 484h800M0 528h800M0 574h800"/>
+  </g>
+  <g fill="#9dd0f0" opacity=".12">
+    <rect x="288" y="398" width="18" height="120"/>
+    <rect x="506" y="398" width="18" height="150"/>
+  </g>
+  <g fill="#31506a">
+    <rect x="288" y="196" width="18" height="200"/>
+    <rect x="506" y="196" width="18" height="200"/>
+  </g>
+  <g stroke="#9dd0f0" stroke-opacity=".55" stroke-width="2">
+    <path d="M297 206 60 380M297 206 120 380M297 206 180 380M297 206 240 380M297 206 350 380M297 206 400 380"/>
+    <path d="M515 206 460 380M515 206 520 380M515 206 580 380M515 206 640 380M515 206 700 380M515 206 760 380"/>
+    <path d="M288 240h18M288 286h18M288 332h18M506 240h18M506 286h18M506 332h18" stroke-opacity=".25"/>
+  </g>
+  <rect x="30" y="380" width="740" height="16" fill="#2b4459"/>
+  <path d="M30 380h740" stroke="#ffd166" stroke-width="3"/>
+  <g stroke="#7e98ad" stroke-opacity=".4" stroke-width="2">
+    <path d="M50 368v12M74 368v12M98 368v12M122 368v12M146 368v12M170 368v12M194 368v12M218 368v12M242 368v12M266 368v12M290 368v12M314 368v12M338 368v12M362 368v12M386 368v12M410 368v12M434 368v12M458 368v12M482 368v12M506 368v12M530 368v12M554 368v12M578 368v12M602 368v12M626 368v12M650 368v12M674 368v12M698 368v12M722 368v12M746 368v12"/>
+  </g>
+  <g fill="#ffd166">
+    <circle cx="60" cy="374" r="3"/>
+    <circle cx="240" cy="374" r="3"/>
+    <circle cx="400" cy="374" r="3"/>
+    <circle cx="580" cy="374" r="3"/>
+    <circle cx="760" cy="374" r="3"/>
+  </g>
+</svg>

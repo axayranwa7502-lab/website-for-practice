@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img">
+  <title>Office towers under construction with a tower crane</title>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#08121c"/>
+      <stop offset="1" stop-color="#2a4760"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0v40" fill="none" stroke="#8fc7ef" stroke-opacity=".07"/>
+    </pattern>
+    <pattern id="win" width="26" height="30" patternUnits="userSpaceOnUse">
+      <rect x="5" y="7" width="16" height="14" fill="#8fc7ef" fill-opacity=".3"/>
+    </pattern>
+    <pattern id="winWarm" width="26" height="30" patternUnits="userSpaceOnUse">
+      <rect x="5" y="7" width="16" height="14" fill="#ffd166" fill-opacity=".45"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <rect width="800" height="600" fill="url(#grid)"/>
+  <circle cx="128" cy="116" r="26" fill="#ffd166" opacity=".8"/>
+  <circle cx="128" cy="116" r="90" fill="#f08a3c" opacity=".1"/>
+  <!-- buildings -->
+  <rect x="96" y="228" width="150" height="252" fill="#1e3346"/>
+  <rect x="96" y="228" width="150" height="252" fill="url(#win)"/>
+  <path d="M96 228h150v10H96Z" fill="#2f4a63"/>
+  <path d="M246 228v252" stroke="#f08a3c" stroke-width="4"/>
+  <rect x="272" y="150" width="158" height="330" fill="#24405a"/>
+  <rect x="272" y="150" width="158" height="330" fill="url(#winWarm)"/>
+  <path d="M272 150h158v12H272Z" fill="#3d6182"/>
+  <rect x="430" y="150" width="14" height="330" fill="#f08a3c" opacity=".8"/>
+  <rect x="456" y="262" width="150" height="218" fill="#1b2f42"/>
+  <rect x="456" y="262" width="150" height="218" fill="url(#win)"/>
+  <!-- unfinished top -->
+  <g stroke="#5f93b8" stroke-width="3" opacity=".7">
+    <path d="M456 262v-46M481 262v-58M506 262v-40M531 262v-58M556 262v-46M581 262v-58M606 262v-40"/>
+    <path d="M456 236h150M456 208h150"/>
+  </g>
+  <!-- crane -->
+  <rect x="646" y="128" width="16" height="352" fill="#3d6182"/>
+  <path d="M646 128h16M646 168h16M646 208h16M646 248h16M646 288h16M646 328h16M646 368h16M646 408h16M646 448h16" stroke="#8fc7ef" stroke-opacity=".35"/>
+  <path d="M654 136 496 158M654 136 776 158" stroke="#5f93b8" stroke-width="6" stroke-linecap="round"/>
+  <path d="M496 158h280" stroke="#5f93b8" stroke-width="7"/>
+  <rect x="722" y="150" width="46" height="26" fill="#24405a"/>
+  <path d="M654 136v-16" stroke="#5f93b8" stroke-width="5"/>
+  <circle cx="654" cy="116" r="6" fill="#f08a3c"/>
+  <path d="M566 162v96" stroke="#8fc7ef" stroke-opacity=".55" stroke-width="2"/>
+  <rect x="554" y="258" width="24" height="16" rx="2" fill="#f08a3c"/>
+  <!-- ground -->
+  <rect y="480" width="800" height="120" fill="#0d1925"/>
+  <path d="M0 480h800" stroke="#8fc7ef" stroke-opacity=".18" stroke-width="2"/>
+  <g stroke="#8fc7ef" stroke-opacity=".09">
+    <path d="M0 512h800M0 548h800M0 584h800"/>
+  </g>
+</svg>
