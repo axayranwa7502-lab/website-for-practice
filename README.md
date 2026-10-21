@@ -1,6 +1,7 @@
 # website-for-practice
 
 [![Playwright Tests](https://github.com/axayranwa7502-lab/website-for-practice/actions/workflows/playwright.yml/badge.svg)](https://github.com/axayranwa7502-lab/website-for-practice/actions/workflows/playwright.yml)
+[![Live site checks](https://github.com/axayranwa7502-lab/website-for-practice/actions/workflows/live.yml/badge.svg)](https://github.com/axayranwa7502-lab/website-for-practice/actions/workflows/live.yml)
 
 Meri pehli practice website, GitHub Pages par hosted.
 
@@ -16,6 +17,18 @@ Bas `index.html` ko browser me khol lo.
 
 - HTML
 - CSS
+- Firebase (Firestore) — contact form messages
+
+## Contact form → Firestore
+
+Form submit hone par data `messages` collection me jata hai.
+
+- `firebase-config.js` — Firebase project config (public values, koi secret nahi)
+- `firestore.rules` — Firestore security rules (Console → Firestore → Rules me paste karo)
+- Firebase SDK sirf submit ke waqt load hota hai, isliye page fast rehta hai
+
+Data dekhne ke liye: Firebase Console → Firestore Database → `messages`.
+Agar "Missing or insufficient permissions" aaye to rules publish karna baaki hai.
 
 ## Tests (Playwright)
 

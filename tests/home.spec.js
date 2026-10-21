@@ -122,7 +122,7 @@ test.describe('Home page — styling', () => {
   });
 
   test('button hover lifts the CTA by 2px', async ({ page }) => {
-    const cta = page.locator('.btn');
+    const cta = page.getByRole('link', { name: 'GitHub par dekho' });
     await cta.hover();
     await expect
       .poll(() => cta.evaluate((el) => getComputedStyle(el).transform))

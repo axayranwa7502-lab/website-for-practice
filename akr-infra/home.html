@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="AKR Infra — civil and infrastructure contractors building roads, bridges, water systems and commercial spaces. Browse selected projects."
+  />
+  <meta name="theme-color" content="#0f1a26" />
+  <meta property="og:title" content="AKR INFRA. — Infrastructure, delivered." />
+  <meta
+    property="og:description"
+    content="Roads, bridges, water systems and buildings — designed, built and inspected by one team."
+  />
+  <meta property="og:type" content="website" />
+  <title>AKR INFRA. — Civil &amp; infrastructure contractors</title>
+  <link rel="stylesheet" href="home.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="AKR Infra — back to top">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-name">AKR INFRA<span class="brand-dot">.</span></span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-cta" href="#contact">Get a quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ Hero ============ -->
+    <section class="hero" id="top">
+      <div class="wrap hero-inner">
+        <p class="eyebrow">Civil &amp; infrastructure contractors</p>
+        <h1>Infrastructure that stands up to <span class="accent-underline">real life</span>.</h1>
+        <p class="hero-copy">
+          AKR Infra designs and delivers roads, bridges, water systems and commercial
+          buildings — with one team on the drawing board, one team on site, and a
+          handover you can inspect line by line.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">
+            See our projects
+            <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+          <a class="btn btn-ghost" href="#contact">Start a project</a>
+        </div>
+
+        <p class="hero-note">
+          Site visits across Rajasthan · Costed scope in two working days
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ Stats ============ -->
+    <section class="stats" aria-label="Company at a glance">
+      <div class="wrap">
+        <dl class="stats-list">
+          <div class="stat">
+            <dt>Years on site</dt>
+            <dd>14</dd>
+          </div>
+          <div class="stat">
+            <dt>Projects delivered</dt>
+            <dd>120<span class="plus">+</span></dd>
+          </div>
+          <div class="stat">
+            <dt>Kilometres of road</dt>
+            <dd>480</dd>
+          </div>
+          <div class="stat">
+            <dt>Water capacity built</dt>
+            <dd>12<span class="unit"> MLD</span></dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ============ Projects ============ -->
+    <section class="projects" id="projects" aria-labelledby="projects-title">
+      <div class="wrap">
+        <header class="section-head">
+          <div>
+            <p class="eyebrow">Selected work</p>
+            <h2 id="projects-title">Projects</h2>
+          </div>
+          <p class="section-intro">
+            Eight builds from the last three years. Filter by discipline, then open a
+            card for the scope and numbers behind it.
+          </p>
+        </header>
+
+        <div class="filters" role="group" aria-label="Filter projects by discipline">
+          <button class="filter" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter" type="button" data-filter="roads" aria-pressed="false">Roads</button>
+          <button class="filter" type="button" data-filter="bridges" aria-pressed="false">Bridges</button>
+          <button class="filter" type="button" data-filter="water" aria-pressed="false">Water</button>
+          <button class="filter" type="button" data-filter="buildings" aria-pressed="false">Buildings</button>
+          <button class="filter" type="button" data-filter="energy" aria-pressed="false">Energy</button>
+          <button class="filter" type="button" data-filter="industrial" aria-pressed="false">Industrial</button>
+        </div>
+
+        <p class="filter-status" id="filter-status" role="status" aria-live="polite">
+          Showing all 8 projects
+        </p>
+
+        <ul class="project-grid" id="project-grid">
+          <li class="project-item" data-category="roads">
+            <button class="project-card" type="button"
+              data-title="Ring Road Widening"
+              data-meta="Jaipur · 2024 · 18.4 km"
+              data-desc="Four-lane widening with dedicated service roads, a new drainage spine and eleven bus bays built without closing the corridor for a single full day."
+              data-image="assets/projects/highway.svg"
+              data-alt="Four-lane highway curving toward the horizon at dusk">
+              <img src="assets/projects/highway.svg" alt="" width="800" height="600" loading="lazy" decoding="async" />
+              <span class="project-body">
+                <span class="chip">Roads</span>
+                <span class="project-title">Ring Road Widening</span>
+                <span class="project-meta">Jaipur · 2024 · 18.4 km</span>
+              </span>
+            </button>
+          </li>
+
+          <li class="project-item" data-category="bridges">
+            <button class="project-card" type="button"
+              data-title="Yamuna Footbridge"
+              data-meta="Mathura · 2023 · 240 m"
+              data-desc="A 240 m cable-stayed pedestrian crossing with a 3.2 m deck, stainless handrails and lighting that runs off a rooftop solar array."
+              data-image="assets/projects/bridge.svg"
+              data-alt="Cable-stayed bridge spanning calm water at dusk">
+              <img src="assets/projects/bridge.svg" alt="" width="800" height="600" loading="lazy" decoding="async" />
+              <span class="project-body">
+                <span class="chip">Bridges</span>
+                <span class="project-title">Yamuna Footbridge</span>
+                <span class="project-meta">Mathura · 2023 · 240 m</span>
+              </span>
+            </button>
+          </li>
+
+          <li class="project-item" data-category="water">
+            <button class="project-card" type="button"
+              data-title="Kotputli Water Works"
+              data-meta="Kotputli · 2025 · 12 MLD"
+              data-desc="A 12 MLD treatment plant with three clarifier tanks, 34 km of distribution main and a SCADA room that reports to the municipal control centre."
+              data-image="assets/projects/water.svg"
+              data-alt="Water treatment tanks and pipelines at a treatment plant">
+              <img src="assets/projects/water.svg" alt="" width="800" height="600" loading="lazy" decoding="async" />
+              <span class="project-body">
+                <span class="chip">Water</span>
+                <span class="project-title">Kotputli Water Works</span>
+                <span class="project-meta">Kotputli · 2025 · 12 MLD</span>
+              </span>
+            </button>
+          </li>
+
+          <li class="project-item" data-category="buildings">
+            <button class="project-card" type="button"
+              data-title="Sunrise Business Park"
+              data-meta="Jaipur · 2023 · 62,000 m²"
+              data-desc="Four office towers on a shared two-level podium, with a 900-car basement, rainwater harvesting and a façade that cuts solar gain by 28%."
+              data-image="assets/projects/tower.svg"
+              data-alt="Office towers under construction with a tower crane">
+              <img src="assets/projects/tower.svg" alt="" width="800" height="600" loading="lazy" decoding="async" />
+              <span class="project-body">
+                <span class="chip">Buildings</span>
+                <span class="project-title">Sunrise Business Park</span>
+                <span class="project-meta">Jaipur · 2023 · 62,000 m²</span>
+              </span>
+            </button>
+          </li>
+
+          <li class="project-item" data-category="energy">
+            <button class="project-card" type="button"
+              data-title="Bhadla Solar Pad"
+              data-meta="Bhadla · 2024 · 40 MW"
+              data-desc="Civil works for a 40 MW ground-mounted array: 1,240 piles, inverter pads, cable trenches and 6 km of internal access road."
+              data-image="assets/projects/solar.svg"
+              data-alt="Rows of solar panels under a bright sun">
+              <img src="assets/projects/solar.svg" alt="" width="800" height="600" loading="lazy" decoding="async" />
+              <span class="project-body">
+                <span class="chip">Energy</span>
+                <span class="project-title">Bhadla Solar Pad</span>
+                <span class="project-meta">Bhadla · 2024 · 40 MW</span>
+              </span>
+            </button>
+          </li>
+
+          <li class="project-item" data-category="industrial">
+            <button class="project-card" type="button"
+              data-title="Logistics Hub Phase II"
+              data-meta="Neemrana · 2025 · 28,000 m²"
+              data-desc="Pre-engineered warehousing with a 12 m clear height, 42 dock levellers and a concrete yard rated for 40-tonne trailer turns."
+              data-image="assets/projects/warehouse.svg"
+              data-alt="Industrial warehouse with loading bays and stacked containers">
+              <img src="assets/projects/warehouse.svg" alt="" width="800" height="600" loading="lazy" decoding="async" />
+              <span class="project-body">
+                <span class="chip">Industrial</span>
+                <span class="project-title">Logistics Hub Phase II</span>
+                <span class="project-meta">Neemrana · 2025 · 28,000 m²</span>
+              </span>
+            </button>
+          </li>
+
+          <li class="project-item" data-category="buildings">
+            <button class="project-card" type="button"
+              data-title="Nirman Public School"
+              data-meta="Ajmer · 2022 · 9,400 m²"
+              data-desc="A three-storey school for 1,100 students, built around two shaded courtyards with ramps to every floor and a 200-seat assembly hall."
+              data-image="assets/projects/school.svg"
+              data-alt="Low-rise school building with shaded courtyards and trees">
+              <img src="assets/projects/school.svg" alt="" width="800" height="600" loading="lazy" decoding="async" />
+              <span class="project-body">
+                <span class="chip">Buildings</span>
+                <span class="project-title">Nirman Public School</span>
+                <span class="project-meta">Ajmer · 2022 · 9,400 m²</span>
+              </span>
+            </button>
+          </li>
+
+          <li class="project-item" data-category="water">
+            <button class="project-card" type="button"
+              data-title="North Trunk Sewer"
+              data-meta="Jodhpur · 2024 · 21 km"
+              data-desc="A 21 km trunk sewer in trenchless sections under a live road, with 340 manholes, odour control units and full CCTV survey records at handover."
+              data-image="assets/projects/pipeline.svg"
+              data-alt="Cross-section of a buried sewer pipeline with manhole access">
+              <img src="assets/projects/pipeline.svg" alt="" width="800" height="600" loading="lazy" decoding="async" />
+              <span class="project-body">
+                <span class="chip">Water</span>
+                <span class="project-title">North Trunk Sewer</span>
+                <span class="project-meta">Jodhpur · 2024 · 21 km</span>
+              </span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ Contact ============ -->
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="wrap contact-inner">
+        <div class="contact-copy">
+          <p class="eyebrow">Start a project</p>
+          <h2 id="contact-title">Have a site, a drawing, or just a rough idea?</h2>
+          <p>
+            Send us the details and we will come back with a site visit date and a
+            costed scope — usually within two working days.
+          </p>
+        </div>
+
+        <div class="contact-card">
+          <form id="contact-form" class="contact-form" novalidate>
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" autocomplete="name" maxlength="100" required />
+            </div>
+
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" maxlength="200" required />
+            </div>
+
+            <div class="field">
+              <label for="message">Project details</label>
+              <textarea id="message" name="message" rows="4" maxlength="1000" required></textarea>
+            </div>
+
+            <button class="btn btn-primary" type="submit">Send message</button>
+            <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+
+            <p class="form-note">
+              Saved to our project inbox. Prefer email?
+              <a href="mailto:axayranwa7502@gmail.com?subject=Project%20enquiry%20%E2%80%94%20AKR%20Infra">
+                axayranwa7502@gmail.com
+              </a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p class="footer-brand">AKR INFRA.</p>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <p class="footer-legal">© 2026 AKR Infra. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Project lightbox -->
+  <dialog class="lightbox" id="project-dialog" aria-labelledby="lightbox-title">
+    <button class="lightbox-close" type="button" aria-label="Close project details" data-close>
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" />
+      </svg>
+    </button>
+    <img class="lightbox-img" id="lightbox-img" alt="" width="800" height="600" />
+    <div class="lightbox-body">
+      <p class="lightbox-meta" id="lightbox-meta"></p>
+      <h2 class="lightbox-title" id="lightbox-title"></h2>
+      <p class="lightbox-desc" id="lightbox-desc"></p>
+    </div>
+  </dialog>
+
+  <script src="../firebase-config.js"></script>
+  <script src="home.js" defer></script>
+</body>
+</html>

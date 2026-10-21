@@ -1,0 +1,55 @@
+name: Live site checks
+
+on:
+  schedule:
+    # Daily at 03:30 UTC (09:00 IST)
+    - cron: '30 3 * * *'
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/live.yml'
+  pull_request:
+    paths:
+      - '.github/workflows/live.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: live-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  live:
+    name: GitHub Pages smoke test
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Run live checks
+        env:
+          RUN_LIVE: '1'
+        run: npx playwright test tests/live.spec.js
+
+      - name: Upload HTML report
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: live-report
+          path: playwright-report/
+          retention-days: 14

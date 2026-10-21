@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img">
+  <title>Water treatment tanks and pipelines at a treatment plant</title>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1621"/>
+      <stop offset="1" stop-color="#26465f"/>
+    </linearGradient>
+    <linearGradient id="tankBody" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22384c"/>
+      <stop offset=".45" stop-color="#3a5c7a"/>
+      <stop offset="1" stop-color="#1d3042"/>
+    </linearGradient>
+    <pattern id="grid" patternUnits="userSpaceOnUse" width="40" height="40">
+      <path d="M40 0H0v40" fill="none" stroke="#8fc7ef" stroke-opacity=".07"/>
+    </pattern>
+    <g id="tank">
+      <path d="M-78 0v96q78 26 156 0V0Z" fill="url(#tankBody)"/>
+      <path d="M-78 44q78 24 156 0" fill="none" stroke="#0d1a26" stroke-opacity=".35" stroke-width="3"/>
+      <path d="M-78 70q78 24 156 0" fill="none" stroke="#0d1a26" stroke-opacity=".25" stroke-width="3"/>
+      <ellipse rx="78" ry="20" fill="#41678a"/>
+      <ellipse rx="64" ry="14" fill="#2d7594"/>
+      <ellipse cx="-16" cy="-3" rx="26" ry="6" fill="#8fd3ea" opacity=".35"/>
+      <ellipse rx="64" ry="14" fill="none" stroke="#9dd0f0" stroke-opacity=".45"/>
+      <path d="M-78 0h156" stroke="#9dd0f0" stroke-opacity=".25"/>
+      <circle cy="52" r="11" fill="none" stroke="#f08a3c" stroke-width="4"/>
+      <path d="M-11 52h22M0 41v22" stroke="#f08a3c" stroke-width="3"/>
+    </g>
+  </defs>
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <rect width="800" height="600" fill="url(#grid)"/>
+  <circle cx="690" cy="120" r="120" fill="#f08a3c" opacity=".12"/>
+  <circle cx="690" cy="120" r="30" fill="#ffd166" opacity=".8"/>
+  <path d="M0 300 140 268 300 300 440 274 600 300 760 276 800 288V310H0Z" fill="#102232"/>
+  <rect y="300" width="800" height="300" fill="#0e1b26"/>
+  <!-- control room -->
+  <rect x="34" y="252" width="104" height="76" rx="4" fill="#2a4358"/>
+  <rect x="44" y="264" width="20" height="16" fill="#8fc7ef" opacity=".45"/>
+  <rect x="72" y="264" width="20" height="16" fill="#8fc7ef" opacity=".45"/>
+  <rect x="100" y="264" width="20" height="16" fill="#ffd166" opacity=".7"/>
+  <rect x="44" y="292" width="76" height="8" fill="#0f1f2c"/>
+  <rect x="34" y="328" width="104" height="10" fill="#1a2c3c"/>
+  <!-- tanks -->
+  <use href="#tank" transform="translate(190 318)"/>
+  <use href="#tank" transform="translate(400 318)"/>
+  <!-- basin -->
+  <rect x="500" y="352" width="270" height="84" rx="8" fill="#24405a"/>
+  <rect x="512" y="362" width="246" height="64" rx="4" fill="#2d7594"/>
+  <path d="M520 380h230M520 400h230" stroke="#9dd0f0" stroke-opacity=".22" stroke-width="3"/>
+  <rect x="500" y="436" width="270" height="12" rx="4" fill="#1a2c3c"/>
+  <!-- pipes -->
+  <path d="M190 424h310" stroke="#2b4459" stroke-width="16" stroke-linecap="round"/>
+  <path d="M190 424h310" stroke="#4d7594" stroke-width="6" stroke-linecap="round" opacity=".5"/>
+  <g fill="#3d6182" stroke="#0f1f2c" stroke-width="2">
+    <circle cx="190" cy="424" r="12"/>
+    <circle cx="300" cy="424" r="10"/>
+    <circle cx="400" cy="424" r="12"/>
+  </g>
+  <!-- pad -->
+  <rect y="440" width="800" height="160" fill="#12222f"/>
+  <path d="M0 440h800" stroke="#8fc7ef" stroke-opacity=".18" stroke-width="2"/>
+  <g stroke="#8fc7ef" stroke-opacity=".1">
+    <path d="M0 472h800M0 508h800M0 548h800M0 586h800"/>
+  </g>
+</svg>

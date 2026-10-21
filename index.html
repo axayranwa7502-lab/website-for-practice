@@ -3,41 +3,198 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="MySite — meri pehli practice website, GitHub Pages par live. HTML, CSS aur Firebase ke saath banayi gayi."
+  />
+  <meta name="theme-color" content="#0f172a" />
   <title>My Website | Practice</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="nav">
-    <a class="logo" href="#">MySite</a>
-    <nav>
+    <a class="logo" href="#">
+      <span class="logo-mark" aria-hidden="true"></span>
+      <span class="logo-text">MySite</span>
+    </a>
+    <nav aria-label="Primary">
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <main class="hero">
-    <p class="badge">GitHub Pages ready</p>
-    <h1>Hello, world! 👋</h1>
-    <p class="subtitle">
-      Yeh meri pehli website hai jo ab GitHub Pages par live hai.
-    </p>
-    <a class="btn" href="https://github.com" target="_blank" rel="noopener">
-      GitHub par dekho
-    </a>
+    <div class="hero-bg" aria-hidden="true">
+      <span class="orb orb-1"></span>
+      <span class="orb orb-2"></span>
+      <span class="grid-overlay"></span>
+    </div>
+
+    <div class="hero-content">
+      <p class="badge">GitHub Pages ready</p>
+      <h1>Hello, <span class="gradient-text">world!</span> <span class="wave" aria-hidden="true">👋</span></h1>
+      <p class="subtitle">
+        Yeh meri pehli website hai jo ab GitHub Pages par live hai.
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn" href="https://github.com" target="_blank" rel="noopener noreferrer">
+          GitHub par dekho
+          <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </a>
+      </div>
+
+      <p class="hero-note">Bina framework, bina build step — sirf plain HTML, CSS aur thoda JavaScript.</p>
+
+      <ul class="hero-stack" aria-label="Built with">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Firebase</li>
+        <li>Playwright</li>
+      </ul>
+    </div>
   </main>
 
-  <section id="about" class="section">
+  <section id="about" class="section about">
+    <span class="eyebrow">About me</span>
     <h2>About</h2>
-    <p>Yahan aap apne baare me likh sakte ho. Yeh file <code>index.html</code> me hai.</p>
+    <p class="lead">
+      Yahan aap apne baare me likh sakte ho. Yeh file <code>index.html</code> me hai.
+    </p>
+
+    <div class="cards">
+      <article class="card">
+        <span class="card-icon" aria-hidden="true">✨</span>
+        <h3>Simple &amp; fast</h3>
+        <span class="card-text">Koi framework nahi, koi build step nahi — page seedha browser me khulta hai.</span>
+      </article>
+
+      <article class="card">
+        <span class="card-icon" aria-hidden="true">🎨</span>
+        <h3>Responsive design</h3>
+        <span class="card-text">Mobile aur desktop dono par layout apne aap adjust ho jata hai.</span>
+      </article>
+
+      <article class="card">
+        <span class="card-icon" aria-hidden="true">🚀</span>
+        <h3>Live on Pages</h3>
+        <span class="card-text">Har push par GitHub Pages se site automatically update hoti hai.</span>
+      </article>
+    </div>
   </section>
 
-  <section id="contact" class="section">
+  <section id="contact" class="section contact">
+    <span class="eyebrow">Get in touch</span>
     <h2>Contact</h2>
     <p>Email: <a href="mailto:axayranwa7502@gmail.com">axayranwa7502@gmail.com</a></p>
+
+    <h3 class="form-title">Message bhejo</h3>
+    <form id="contact-form" class="contact-form" novalidate>
+      <div class="field">
+        <label for="name">Naam</label>
+        <input id="name" name="name" type="text" autocomplete="name" maxlength="100" required />
+      </div>
+
+      <div class="field">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email" maxlength="200" required />
+      </div>
+
+      <div class="field">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" maxlength="1000" required></textarea>
+      </div>
+
+      <button class="btn" type="submit">Send</button>
+      <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+    </form>
   </section>
 
   <footer>
     <p>© 2026 MySite — Built with HTML &amp; CSS</p>
+    <p class="footer-note">Crafted with care · Hosted on GitHub Pages</p>
   </footer>
+
+  <script src="firebase-config.js"></script>
+  <script type="module">
+    const form = document.getElementById("contact-form");
+    const status = document.getElementById("form-status");
+    const submitButton = form.querySelector('button[type="submit"]');
+
+    // Firebase is loaded only when the form is submitted, so the page
+    // stays fast (and works offline) until someone actually sends a message.
+    let firestorePromise = null;
+
+    function loadFirestore() {
+      if (!firestorePromise) {
+        firestorePromise = (async () => {
+          const [{ initializeApp }, firestore] = await Promise.all([
+            import("https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js"),
+            import("https://www.gstatic.com/firebasejs/11.0.2/firebase-firestore.js"),
+          ]);
+
+          if (!window.firebaseConfig) {
+            throw new Error("Firebase config missing (firebase-config.js)");
+          }
+
+          const app = initializeApp(window.firebaseConfig);
+          return { db: firestore.getFirestore(app), firestore };
+        })();
+
+        // Allow a retry if the SDK could not be loaded (e.g. offline).
+        firestorePromise.catch(() => {
+          firestorePromise = null;
+        });
+      }
+      return firestorePromise;
+    }
+
+    function showStatus(text, state) {
+      status.textContent = text;
+      status.dataset.state = state;
+    }
+
+    form.addEventListener("submit", async (event) => {
+      event.preventDefault();
+
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
+
+      submitButton.disabled = true;
+      showStatus("Bhej rahe hain…", "pending");
+
+      try {
+        const { db, firestore } = await loadFirestore();
+
+        await firestore.addDoc(
+          firestore.collection(db, window.firebaseCollection || "messages"),
+          {
+            name: document.getElementById("name").value.trim(),
+            email: document.getElementById("email").value.trim(),
+            message: document.getElementById("message").value.trim(),
+            createdAt: firestore.serverTimestamp(),
+          }
+        );
+
+        form.reset();
+        showStatus("Shukriya! Aapka message save ho gaya. ✅", "success");
+      } catch (error) {
+        console.error("Firestore write failed:", error);
+        showStatus(
+          "Message save nahi hua. Internet check karke dobara try karo. (" +
+            (error?.code || error?.message || "unknown error") +
+            ")",
+          "error"
+        );
+      } finally {
+        submitButton.disabled = false;
+      }
+    });
+  </script>
 </body>
 </html>

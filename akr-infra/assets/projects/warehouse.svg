@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img">
+  <title>Industrial warehouse with loading bays and stacked containers</title>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#09141f"/>
+      <stop offset="1" stop-color="#2b4a63"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0v40" fill="none" stroke="#8fc7ef" stroke-opacity=".07"/>
+    </pattern>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2b4358"/>
+      <stop offset="1" stop-color="#1a2c3c"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <rect width="800" height="600" fill="url(#grid)"/>
+  <circle cx="120" cy="120" r="24" fill="#ffd166" opacity=".75"/>
+  <!-- shed -->
+  <path d="M64 312 176 256H648L712 312Z" fill="#35516a"/>
+  <path d="M64 312 176 256H648L712 312" fill="none" stroke="#8fc7ef" stroke-opacity=".35" stroke-width="2"/>
+  <rect x="96" y="312" width="584" height="152" fill="url(#wall)"/>
+  <path d="M96 312h584" stroke="#f08a3c" stroke-width="5"/>
+  <!-- roof ribs -->
+  <g stroke="#5f93b8" stroke-opacity=".3">
+    <path d="M176 256 130 312M240 256 212 312M304 256 294 312M368 256 376 312M432 256 458 312M496 256 540 312M560 256 622 312"/>
+  </g>
+  <!-- dock canopy -->
+  <rect x="112" y="322" width="492" height="10" fill="#41678a"/>
+  <!-- doors -->
+  <g>
+    <rect x="130" y="340" width="88" height="118" fill="#101d28" stroke="#f08a3c" stroke-opacity=".7"/>
+    <rect x="238" y="340" width="88" height="118" fill="#101d28" stroke="#f08a3c" stroke-opacity=".7"/>
+    <rect x="346" y="340" width="88" height="118" fill="#101d28" stroke="#f08a3c" stroke-opacity=".7"/>
+    <rect x="454" y="340" width="88" height="118" fill="#101d28" stroke="#f08a3c" stroke-opacity=".7"/>
+    <g stroke="#5f93b8" stroke-opacity=".35">
+      <path d="M134 358h80M134 376h80M134 394h80M134 412h80M134 430h80"/>
+      <path d="M242 358h80M242 376h80M242 394h80M242 412h80M242 430h80"/>
+      <path d="M350 358h80M350 376h80M350 394h80M350 412h80M350 430h80"/>
+      <path d="M458 358h80M458 376h80M458 394h80M458 412h80M458 430h80"/>
+    </g>
+  </g>
+  <!-- containers -->
+  <g>
+    <rect x="700" y="380" width="86" height="28" fill="#b8400f"/>
+    <rect x="700" y="410" width="86" height="28" fill="#2b6b7a"/>
+    <rect x="700" y="440" width="86" height="28" fill="#35516a"/>
+    <g stroke="#0b141c" stroke-opacity=".45">
+      <path d="M714 380v28M728 380v28M742 380v28M756 380v28M770 380v28"/>
+      <path d="M714 410v28M728 410v28M742 410v28M756 410v28M770 410v28"/>
+      <path d="M714 440v28M728 440v28M742 440v28M756 440v28M770 440v28"/>
+    </g>
+  </g>
+  <!-- light poles -->
+  <g stroke="#41678a" stroke-width="5" stroke-linecap="round">
+    <path d="M78 464V330M636 464V330"/>
+  </g>
+  <g fill="#ffd166">
+    <circle cx="78" cy="326" r="7"/>
+    <circle cx="636" cy="326" r="7"/>
+  </g>
+  <!-- yard -->
+  <rect y="464" width="800" height="136" fill="#0d1925"/>
+  <path d="M0 464h800" stroke="#8fc7ef" stroke-opacity=".2" stroke-width="2"/>
+  <g stroke="#8fc7ef" stroke-opacity=".12" stroke-width="3">
+    <path d="M100 520h140M100 556h140M300 520h140M300 556h140"/>
+  </g>
+</svg>

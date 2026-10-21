@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img">
+  <title>Cross-section of a buried sewer pipeline with manhole access</title>
+  <defs>
+    <linearGradient id="top" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1520"/>
+      <stop offset="1" stop-color="#22394c"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0v40" fill="none" stroke="#8fc7ef" stroke-opacity=".07"/>
+    </pattern>
+    <pattern id="pebbles" width="46" height="46" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="12" r="5" fill="#6b6252" fill-opacity=".35"/>
+      <circle cx="32" cy="30" r="7" fill="#554c3f" fill-opacity=".4"/>
+      <circle cx="22" cy="6" r="3" fill="#7d7260" fill-opacity=".3"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="600" fill="url(#top)"/>
+  <rect width="800" height="600" fill="url(#grid)"/>
+  <circle cx="700" cy="60" r="70" fill="#f08a3c" opacity=".1"/>
+  <!-- road surface -->
+  <rect y="86" width="800" height="34" fill="#1b2732"/>
+  <path d="M0 86h800" stroke="#8fc7ef" stroke-opacity=".35" stroke-width="2"/>
+  <g fill="#ffd166" fill-opacity=".55">
+    <rect x="40" y="100" width="54" height="6"/>
+    <rect x="134" y="100" width="54" height="6"/>
+    <rect x="228" y="100" width="54" height="6"/>
+    <rect x="322" y="100" width="54" height="6"/>
+    <rect x="600" y="100" width="54" height="6"/>
+    <rect x="694" y="100" width="54" height="6"/>
+  </g>
+  <!-- soil layers -->
+  <rect y="120" width="800" height="130" fill="#3b3126"/>
+  <rect y="250" width="800" height="180" fill="#4a4232"/>
+  <rect y="250" width="800" height="180" fill="url(#pebbles)"/>
+  <rect y="430" width="800" height="170" fill="#2f3540"/>
+  <g stroke="#0a1219" stroke-opacity=".35">
+    <path d="M0 250h800M0 430h800"/>
+  </g>
+  <!-- trench -->
+  <path d="M268 120h268l40 300H228Z" fill="#5a5142" fill-opacity=".55"/>
+  <path d="M268 120h268l40 300H228Z" fill="none" stroke="#ffd166" stroke-opacity=".25" stroke-width="2"/>
+  <!-- pipe -->
+  <circle cx="400" cy="416" r="86" fill="none" stroke="#3d6182" stroke-width="20"/>
+  <circle cx="400" cy="416" r="86" fill="none" stroke="#8fc7ef" stroke-opacity=".35" stroke-width="2"/>
+  <circle cx="400" cy="416" r="74" fill="#10202e"/>
+  <path d="M326 416a74 74 0 0 0 148 0Z" fill="#2f7f9e" fill-opacity=".55"/>
+  <path d="M340 400h120" stroke="#8fd3ea" stroke-opacity=".35" stroke-width="4"/>
+  <!-- gravel bed -->
+  <path d="M300 494h200v22H300Z" fill="#6b6252" fill-opacity=".5"/>
+  <!-- manhole -->
+  <g>
+    <rect x="640" y="120" width="70" height="310" fill="#3b5070" fill-opacity=".85"/>
+    <rect x="640" y="120" width="70" height="310" fill="none" stroke="#8fc7ef" stroke-opacity=".35" stroke-width="2"/>
+    <rect x="626" y="86" width="98" height="14" fill="#41678a"/>
+    <rect x="632" y="100" width="86" height="10" fill="#0e1b26"/>
+    <g stroke="#8fc7ef" stroke-opacity=".4" stroke-width="4">
+      <path d="M654 150h42M654 186h42M654 222h42M654 258h42M654 294h42M654 330h42M654 366h42"/>
+    </g>
+    <path d="M654 150v42M696 186v42M654 258v42M696 330v42" stroke="#8fc7ef" stroke-opacity=".3" stroke-width="4"/>
+    <path d="M675 430v64" stroke="#3b5070" stroke-width="60" opacity=".5"/>
+  </g>
+  <!-- marker post -->
+  <g>
+    <rect x="222" y="30" width="14" height="56" fill="#b8400f"/>
+    <rect x="212" y="22" width="34" height="14" rx="3" fill="#f08a3c"/>
+  </g>
+  <!-- flow arrows -->
+  <g stroke="#8fd3ea" stroke-opacity=".5" stroke-width="4" stroke-linecap="round">
+    <path d="M356 416h88M430 402l16 14-16 14"/>
+  </g>
+</svg>
